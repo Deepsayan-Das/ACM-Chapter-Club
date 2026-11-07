@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { coreTeam } from "../data/CoreTeam";
+import { faculty } from "../data/Faculty";
 import { mlTeam } from "../data/mlTeam";
 import { webDevTeam } from "../data/webDevTeam";
 import { web3Team } from "../data/web3Team";
@@ -9,6 +10,7 @@ import { contentTeam } from "../data/contentTeam";
 import { prTeam } from "../data/prTeam";
 import Member from "./Member";
 import CoreTeamBackground from "./backgrounds/CoreTeamBackground";
+import FacultyBackground from "./backgrounds/FacultyBackground";
 import Web3Background from "./backgrounds/Web3Background";
 import WebDevBackground from "./backgrounds/WebDevBackground";
 import MLBackground from "./backgrounds/MLBackground";
@@ -23,6 +25,13 @@ const teams = [
         data: coreTeam,
         background: <CoreTeamBackground />,
         borderColor: "border-gray-200",
+    },
+    {
+        id: "faculty",
+        name: "Faculty",
+        data: faculty,
+        background: <FacultyBackground />,
+        borderColor: "border-amber-200",
     },
     {
         id: "web3",

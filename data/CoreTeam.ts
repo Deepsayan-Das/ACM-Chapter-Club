@@ -36,14 +36,14 @@ export const coreTeam: TeamMember[] = [
         linkedinURL: "https://www.linkedin.com/in/akdandapat/",
         githubURL: "https://github.com/akdandapat",
     },
-    {
-        firstName: "Swarnendu",
-        lastName: "Banerjee",
-        imageURL: "/team/swarnendu-banerjee.jpeg",
-        post: "Technical Lead",
-        bio: "System design enthusiast who loves optimizing code performance. Passionate about AI/ML and loves playing open world games.",
-        linkedinURL: "https://www.linkedin.com/in/swarnendu-banerjee-78aa49298/",
-        githubURL: "https://github.com/Pookie-n-Rookie",
+{
+        firstName: "Ankit",
+        lastName: "Roy",
+        imageURL: "/team/ankit-roy.png",
+        post: "Core Member",
+        bio: "Backend developer who enjoys architecting robust APIs. Loves optimizing database queries and binge-watching tech talks.",
+        linkedinURL: "https://www.linkedin.com/in/ankit-roy-ju362/",
+        githubURL: "https://github.com/AnkitCodesJU",
     },
     {
         firstName: "Keya",

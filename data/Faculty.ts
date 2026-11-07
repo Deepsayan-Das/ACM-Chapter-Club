@@ -3,8 +3,8 @@ export const faculty: TeamMember[] = [
         honorifics: "Dr.",
         firstName: "Munmun",
         lastName: "Bhattacharya",
-        imageURL: "/team/somoprovo-bhattacharjee.jpg",
+        imageURL: "/team/faculty/dr-munmun-bhattacharya.jpg",
         post: "Faculty Sponsor",
-        linkedinURL: "https://www.linkedin.com/in/somoprovo-bhattacharjee/",
+        linkedinURL: "https://www.linkedin.com/in/dr-munmun-bhattacharya-1b981054/",
     },
 ];

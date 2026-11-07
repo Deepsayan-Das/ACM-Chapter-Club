@@ -18,4 +18,5 @@ export const webDevTeam: TeamMember[] = [
         githubURL: "https://github.com/Dipram-9090",
     },
     
+    
 ];

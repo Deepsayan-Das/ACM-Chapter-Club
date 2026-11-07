@@ -142,13 +142,13 @@ export default function RegisterPage() {
           />
 
           {/* Department Field */}
-          <OptionField
+          {/*<OptionField
             opdata={departmentList}
             title="Department"
             name="department"
             value={formData.department}
             onChange={handleChange}
-          />
+          />*/}
 
           <button
             type="submit"

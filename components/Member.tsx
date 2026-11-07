@@ -33,6 +33,7 @@ export default function Member({ member }: { member: TeamMember }) {
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.1 }}
                 >
+                    {member.honorifics ? `${member.honorifics} ` : ""}
                     {member.lastName}, {member.firstName}
                 </motion.p>
                 <motion.p
