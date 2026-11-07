@@ -40,7 +40,7 @@ export const coreTeam: TeamMember[] = [
         firstName: "Ankit",
         lastName: "Roy",
         imageURL: "/team/ankit-roy.png",
-        post: "Core Member",
+        post: "Technical Lead",
         bio: "Backend developer who enjoys architecting robust APIs. Loves optimizing database queries and binge-watching tech talks.",
         linkedinURL: "https://www.linkedin.com/in/ankit-roy-ju362/",
         githubURL: "https://github.com/AnkitCodesJU",
