@@ -5,7 +5,7 @@ export interface RegistrationData {
   email: string;
   acmMemberNumber: string;
   studyYear: string;
-  department: string;
+  department?: string;
 }
 
 function escapeHtml(text: string): string {
@@ -61,7 +61,6 @@ export function generateRegistrationEmailHtml(data: RegistrationData): string {
   const safeEmail = escapeHtml(data.email);
   const safeMemberNumber = escapeHtml(data.acmMemberNumber);
   const safeStudyYear = escapeHtml(data.studyYear);
-  const safeDepartment = escapeHtml(data.department);
   const submittedAt = new Date().toLocaleString("en-US", {
     dateStyle: "full",
     timeStyle: "short",
@@ -138,23 +137,12 @@ export function generateRegistrationEmailHtml(data: RegistrationData): string {
                 </tr>
 
                 <tr>
-                  <td style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">
+                  <td style="padding-top: 12px;">
                     <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b;">
                       Year of Study
                     </span>
                     <div style="font-size: 15px; font-weight: 500; color: #0f172a; margin-top: 4px;">
                       ${safeStudyYear}
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding-top: 12px;">
-                    <span style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b;">
-                      Department
-                    </span>
-                    <div style="font-size: 15px; font-weight: 500; color: #0f172a; margin-top: 4px;">
-                      ${safeDepartment}
                     </div>
                   </td>
                 </tr>
@@ -219,11 +207,9 @@ Name: ${data.name}
 Email: ${data.email}
 ACM Member Number: ${data.acmMemberNumber}
 Year of Study: ${data.studyYear}
-Department: ${data.department}
     `.trim(),
     html: generateRegistrationEmailHtml(data),
   };
 
   return await transporter.sendMail(mailOptions);
 }
-
